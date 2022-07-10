@@ -11,39 +11,41 @@
     <h1 id="title">My First Survey</h1>
     <p id="description">A freeCodeCamp feedback survey</p>
   </header>
+
   <form id="survey-form">
-    
     <fieldset name="personal-info">
-      <label id="name-label">Name</label> 
-      <input id="name" type="text" placeholder="Enter your name" required />
-      <label id="email-label">Email</label> 
-      <input id="email" type="email" placeholder="Enter your email" required />
-      <label id="number-label">Age (optional)</label> 
-      <input id="number" type="number" min="13" max="110" placeholder="Age" />
+      <label id="name-label">Enter Your Full Name: <br>
+        <input id="name" type="text" placeholder="Enter your name" required /></label> 
+      <label id="email-label">Enter Your Email Address: <br>
+        <input id="email" type="email" placeholder="Enter your email" required /></label>         
+      <label id="number-label">Age (optional) (13+) <br> 
+        <input id="number" type="number" min="13" max="110" placeholder="Age" /></label>      
     </fieldset>
     
     <fieldset name="recommendation">
       <label id="recommendation">Would you recommend FCC to a friend?</label>
-      <label><input type="radio" name="recs" value="yes"/> Yes</label>
-      <label><input type="radio" name="recs" value="maybe"/> Maybe</label>
-      <label><input type="radio" name="recs" value="no"/> No</label>
+      <label><input type="radio" name="recs" class="radio" value="yes"/> Yes</label>
+      <label><input type="radio" name="recs" class="radio" value="maybe"/> Maybe</label>
+      <label><input type="radio" name="recs" class="radio" value="no"/> No</label>
     </fieldset>
     
     <fieldset name="feedback">
-      <label id="select">Favourite feature:
+      <label id="select">Favourite feature: <br>
       <select id="dropdown">
-        <option value="""">(select one)</option>
+        <option value="0">(select one)</option>
         <option value="1">Learning</option>
-        <option value="2">Community</option></label>
+        <option value="2">Community</option>
       </select>
+        </label>
+
       <label id="improve-checkbox">What would you like improved?</label>
       <label><input type="checkbox" value="add-courses" /> Additional Courses </label>
       <label><input type="checkbox" value="forum" /> Forum </label>
       <label><input type="checkbox" value="data-vis" /> Data Visualisation </label>
       <label id="text-area">Any Comments or Suggestions?
-      <textarea rows="3" cols="30" placeholder="type here..."></textarea></label>
+      <textarea rows="5" cols="30" placeholder="Type here..."></textarea></label>
     </fieldset>
-      <button id="submit" type="submit">Submit</button>
+      <input type="submit" value="Submit" />
   </form>
 
 </body>
